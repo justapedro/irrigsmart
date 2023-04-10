@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
-
+  <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Pedro Marcondes, Guilherme Paupitz, Valber J. Batista">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>IrrigSmart</title>
+    <title>Início | IrrigSmart</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -86,12 +86,10 @@
         z-index: 1500;
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="./css/index.css" rel="stylesheet">
   </head>
   <body>
+
+    <!-- SELETOR DE TEMAS -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -143,173 +141,163 @@
       </ul>
     </div>
 
-    
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">IrrigSmart</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="canvas.html"><i class="bi bi-bar-chart"></i> Planejamento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#equipe"><i class="bi bi-file-person"></i> Equipe</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img width="100%" src="https://www.usinainfo.com.br/blog/wp-content/uploads/2019/07/teste-matheus-1920x1080.jpg" class="d-block w-100" alt="">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Sistema de Irrigação Automática</h1>
-            <p>Nosso projeto é alinhado com o objetivo .</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+    <!-- HEADER -->
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IrrigSmart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="planejamento.html"><i class="bi bi-bar-chart"></i> Planejamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipe"><i class="bi bi-file-person"></i> Equipe</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+      </nav>
+    </header>
+
+    <main>
+      <!-- CARROSSEL -->
+      
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img width="100%" src="https://www.usinainfo.com.br/blog/wp-content/uploads/2019/07/teste-matheus-1920x1080.jpg" class="d-block w-100" alt="">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Sistema de Irrigação Automática</h1>
+                <p>Nosso projeto é alinhado com o objetivo .</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+
+      <!-- FEATURETTES -->
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Cuidar de plantas nunca foi tão fácil.</h2>
+            <p class="lead">Quem já tentou cuidar de uma plantinha sabe que elas são muito sensíveis a luminosidade, solo e água. <br>São muitas as razões pelas quais plantas morrem, e uma das mais comuns é a falta ou o excesso de água. Para ajudar a combater isso, criamos o irrigador inteligente IrrigSmart.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" width="500" src="./img/planta.png" preserveAspectRatio="xMidYMid slice">
           </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Usando a tecnologia a nosso favor.</h2>
+            <p class="lead">O IrrigSmart utiliza arduino e sensores de umidade no solo para irrigar suas plantas automaticamente. O arduino é uma plataforma de prototipagem eletrônica de código aberto que permite criar projetos de automação residencial e industrial, robótica, sistemas de controle e muito mais.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arduino" src="./img/arduino.png"><title>Arduino</title></img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- ODS -->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Contribuindo para um futuro sustentável.</h2>
+            <p class="lead">Ao adotar o sistema IrrigSmart para cuidar melhor de suas plantas, você contribui para vários dos objetivos de desenvolvimento sustentável da ONU, incluindo o objetivo 2 (Fome Zero e Agricultura Sustentável), o objetivo 6 (Água Potável e Saneamento) e o objetivo 12 (Consumo e Produção Responsáveis).</p>
+          </div>
+          <div class="col-md-5">
+            <img src="https://brasilnaagenda2030.files.wordpress.com/2019/10/objetivos_port.png?w=1024" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ODS da ONU" preserveAspectRatio="xMidYMid slice" focusable="false"><title>ODS da ONU</title></img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- EQUIPE -->
+        <div id="equipe" class="row">
+          <h2 class="display-4 text-center fw-normal lh-1">Nossa Equipe</h2>
+          <p class="lead text-center">Nosso projeto é formado por três cursantes de Engenharia da Computação na Universidade São Francisco.</p>
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_EFCD62F6-E609-4315-AB63-800F16D5F315.jpg&u=1" style="border-radius: 50%" width="120" height="120">
+          <h2 class="fw-normal">Guilherme Paupitz</h2>
+          <p>RA: 202310203</p>
+          <p><a class="btn btn-secondary" href="mailto:guilherme.paupitz@mail.usf.edu.br"><i class="bi bi-envelope"></i></a> <a class="btn btn-secondary" href="https://www.linkedin.com/in/guilherme-paupitz-ba4b60268"><i class="bi bi-linkedin"></i></a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_CE48C6CD-AB8D-44BF-BBE8-FDBB783FD62B.jpg&u=1" style="border-radius: 50%" width="120" height="120">
+          <h2 class="fw-normal">Pedro Marcondes</h2>
+          <p>RA: 202327824</p>
+          <p><a class="btn btn-secondary" href="mailto:pedro.marcondes@mail.usf.edu.br"><i class="bi bi-envelope"></i></a> <a class="btn btn-secondary" href="https://www.linkedin.com/in/pedro-marcondes-41802b22b/"><i class="bi bi-linkedin"></i></a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_6CD886D8-F64B-431A-94F9-8E2800A66F64.jpg&u=1" style="border-radius: 50%" width="120" height="120">
+          <h2 class="fw-normal">Valber J. Batista</h2>
+          <p>RA: 202331049</p>
+          <p><a class="btn btn-secondary" href="mailto:valber.batista@mail.usf.edu.br"><i class="bi bi-envelope"></i></a> <a class="btn btn-secondary" href="https://www.linkedin.com/in/valber-batista-10b11816a"><i class="bi bi-linkedin"></i></a></p>
+        </div>
+        <hr class="featurette-divider">
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">⇡ Voltar ao topo</a></p>
+        <p>&copy; 2023 IrrigSmart. &middot; <a href="https://github.com/justapedro">Criado por justapedro</a></p>
+      </footer>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+    </main>
 
-  <div class="container marketing">
+    <!--SCRIPTS-->
 
-    <!-- START THE FEATURETTES -->
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Plantas morrem. <span class="text-body-secondary">Isso é ruim.</span></h2>
-        <p class="lead">Quem já tentou cuidar de uma plantinha sabe que elas são muito sensíveis a luminosidade, solo e água. <br>São muitas as razões pelas quais plantas morrem, e uma das mais comuns é a falta ou o excesso de água. Para ajudar a combater isso, criamos o irrigador inteligente IrrigSmart.</p>
-      </div>
-      <div class="col-md-5">
-        <img height="500" width="500"src="https://s2.glbimg.com/Gd7_vJW3woKsOe08_2GVSJbdmuA=/0x0:1600x1583/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/0/1/ClrgMVQvCB7GAryG8VNw/planta2-1-.png">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Alinhado com os ODS.</h2>
-        <p class="lead">Nosso projeto contribui aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Ao adotar o sistema IrrigSmart para cuidar melhor de suas plantas, você ajuda a economizar água, aumenta as práticas responsáveis, ajuda a conter o aquecimento global e também melhora a vida na terra.</p>
-      </div>
-      <div class="col-md-5">
-        <img src="https://brasilnaagenda2030.files.wordpress.com/2019/10/objetivos_port.png?w=1024" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div id="equipe" class="row">
-      <h2 class="display-4 text-center fw-normal lh-1">Nossa Equipe</h2>
-      <p class="lead text-center">Nosso projeto é formado por três cursantes de Engenharia da Computação na Universidade São Francisco.</p>
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_EFCD62F6-E609-4315-AB63-800F16D5F315.jpg&u=1" style="border-radius: 50%" width="120" height="120">
-      <h2 class="fw-normal">Guilherme Paupitz</h2>
-      <p>RA: 202310203</p>
-      <p><a class="btn btn-secondary" href="#"><i class="bi bi-linkedin"></i></a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_CE48C6CD-AB8D-44BF-BBE8-FDBB783FD62B.jpg&u=1" style="border-radius: 50%" width="120" height="120">
-      <h2 class="fw-normal">Pedro Marcondes</h2>
-      <p>RA: 202327824</p>
-      <p><a class="btn btn-secondary" href="#"><i class="bi bi-linkedin"></i></a> <a class="btn btn-secondary" href="https://github.com/justapedro"><i class="bi bi-github"></i></a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" src="https://www.usf.edu.br/file.download?idPath=socialconnect.perfil.foto&id=med_6CD886D8-F64B-431A-94F9-8E2800A66F64.jpg&u=1" style="border-radius: 50%" width="120" height="120">
-      <h2 class="fw-normal">Valber J. Batista</h2>
-      <p>RA: 202331049</p>
-      <p><a class="btn btn-secondary" href="#"><i class="bi bi-linkedin"></i></a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
-  <hr class="featurette-divider">
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Voltar ao topo</a></p>
-    <p>&copy; 2023 IrrigSmart. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
-  </footer>
-</main>
-
-    <script src="./js/theming.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/theming.js"></script> <!--SELETOR DE TEMAS-->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> <!--BOOTSTRAP-->
 
     <script type="module">
-      // Import the functions you need from the SDKs you need
+      //FIREBASE
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-    
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
         apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
         authDomain: "irrigsmart-fe662.firebaseapp.com",
@@ -319,8 +307,6 @@
         appId: "1:530590934500:web:1b26758c30bfc8264413f1",
         measurementId: "G-VR1SHW0J4J"
       };
-    
-      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
