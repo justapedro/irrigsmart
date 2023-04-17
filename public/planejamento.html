@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
-
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Pedro Marcondes, Guilherme Paupitz, Valber J. Batista">
-    <meta name="generator" content="Hugo 0.111.3">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>Planejamento | IrrigSmart</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </head>
+    <link href="./css/styles.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -29,6 +29,15 @@
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
+        }
+      }
+
+      .flex-equal > * {
+        flex: 1;
+      }
+      @media (min-width: 768px) {
+        .flex-md-equal > * {
+          flex: 1;
         }
       }
 
@@ -152,32 +161,35 @@
     </style>
   </head>
   <body>
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./img/logo-white.svg" alt="IrrigSmart" width="32" height="32">
-        IrrigSmart
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-bar-chart-fill"></i> Planejamento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#equipe"><i class="bi bi-file-person"></i> Equipe</a>
-          </li>
-        </ul>
+    <!-- HEADER -->
+    <header class="site-header fixed-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/logo-white.svg" alt="IrrigSmart" width="32" height="32">
+              IrrigSmart
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-bar-chart-fill"></i> Planejamento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#equipe"><i class="bi bi-file-person"></i> Equipe</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
-  </nav>
-</header>
+    </header>
 
 <main>
 
@@ -274,7 +286,7 @@
 </main>
 
     <!--SCRIPTS-->
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> <!--BOOTSTRAP-->
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script> <!--BOOTSTRAP-->
     <script type="module">
       //FIREBASE
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
