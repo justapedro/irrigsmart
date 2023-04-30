@@ -28,22 +28,10 @@
         <div class="modal-dialog modal-sm modal-dialog-scrollable modal-fullscreen" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Circuito</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                <div class="modal-body" style="background: url(&quot;assets/img/Circuito2.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
                     <div></div>
-                </div>
-                <div class="modal fade ms-0 mt-0 me-0 pe-0" role="dialog" tabindex="-1" id="modal-ishikawa-1">
-                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable modal-fullscreen" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -52,22 +40,10 @@
         <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable modal-fullscreen" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Fluxograma</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background: url(&quot;assets/img/canvas.webp&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                <div class="modal-body" style="background: url(&quot;assets/img/Fluxograma.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
                     <div></div>
-                </div>
-                <div class="modal fade ms-0 mt-0 me-0 pe-0" role="dialog" tabindex="-1" id="modal-ishikawa-3">
-                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable modal-fullscreen" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -103,8 +79,8 @@
             <div class="container">
                 <div class="accordion" role="tablist" id="accordion-1">
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">Circuito</button></h2>
-                        <div class="accordion-collapse collapse show item-1" role="tabpanel">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Circuito</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-3"><span style="background-color: rgb(248, 249, 250);">Nosso projeto utiliza um microcontrolador ESP32 (compatível com Arduino), um módulo relê, um sensor de umidade do solo, uma bomba de água e um sensor de nível, além de uma fonte para alimentá-lo.</span><br><br><span style="background-color: rgb(248, 249, 250);">O</span>&nbsp;sensor de umidade é colocado na planta que será monitorada. A bomba é ligada em um relê controlado pelo arduino junto de um sensor de nível de água para impedir a ligação da bomba com o reservatório vazio. Ao ser ligada, a bomba envia água até o vaso da planta.<br><br>Confira o circuito simplificado abaixo:</p>
                                 <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" width="905" height="537" src="assets/img/Circuito2.png" data-bs-toggle="modal" data-bs-target="#modal-ishikawa" style="width: 80%;"></div>
@@ -112,8 +88,8 @@
                         </div>
                     </div>
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="350" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="true" aria-controls="accordion-1 .item-2">Fluxograma</button></h2>
-                        <div class="accordion-collapse collapse show item-2" role="tabpanel">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Fluxograma</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">O fluxograma de nosso projeto começa medindo a umidade do solo e verificando se ela está abaixo do ideal. Caso não, ela aguarda 30 minutos para medir novamente. Caso sim, é medido o nível do reservatório e caso esteja baixo, é interrompido e um alerta é emitido ao usuário. Caso esteja bom, a bomba de água é acionada em ciclos de 5 segundos até que o sensor de umidade detecte que o nível está ideal.</span><br><br></p>
                                 <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" src="assets/img/Fluxograma.png" data-bs-toggle="modal" data-bs-target="#modal-canvas" style="width: 80%;"></div>
@@ -124,7 +100,7 @@
                         <h2 class="accordion-header" role="tab"><button class="accordion-button fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="true" aria-controls="accordion-1 .item-3">App</button></h2>
                         <div class="accordion-collapse collapse show item-3" role="tabpanel">
                             <div class="accordion-body">
-                                <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">Nosso projeto terá um app onde será possível monitorar a umidade da planta, o nível do reservatório e forçar a irrigação da planta quando quiser.</span><br><br></p>
+                                <p class="mb-0"><span style="background-color: rgb(248, 249, 250);">Nosso projeto terá um app onde será possível monitorar a umidade da planta, o nível do reservatório e forçar a irrigação da planta quando quiser.</span></p><img src="assets/img/app.png" width="465" height="467">
                             </div>
                         </div>
                     </div>
@@ -151,6 +127,22 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script type="module">
+        //FIREBASE
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
+          authDomain: "irrigsmart-fe662.firebaseapp.com",
+          projectId: "irrigsmart-fe662",
+          storageBucket: "irrigsmart-fe662.appspot.com",
+          messagingSenderId: "530590934500",
+          appId: "1:530590934500:web:1b26758c30bfc8264413f1",
+          measurementId: "G-VR1SHW0J4J"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>

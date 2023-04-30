@@ -100,6 +100,22 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script type="module">
+        //FIREBASE
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
+          authDomain: "irrigsmart-fe662.firebaseapp.com",
+          projectId: "irrigsmart-fe662",
+          storageBucket: "irrigsmart-fe662.appspot.com",
+          messagingSenderId: "530590934500",
+          appId: "1:530590934500:web:1b26758c30bfc8264413f1",
+          measurementId: "G-VR1SHW0J4J"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>
