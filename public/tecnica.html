@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Features - Brand</title>
+    <title>Técnica - IrrigSmart</title>
     <link rel="canonical" href="https://irrigsmart.com.br/tecnica.html">
     <meta property="og:url" content="https://irrigsmart.com.br/tecnica.html">
     <meta property="og:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
@@ -55,6 +55,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#hero">INÍCIO</a></li>
                     <li class="nav-item"><a class="nav-link" href="planejamento.html">planejamento</a></li>
                     <li class="nav-item"><a class="nav-link active" href="tecnica.html">técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ppt.html">Apresentações</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#equipe">equipe</a></li>
                 </ul>
             </div>
@@ -79,7 +80,10 @@
             <div class="container">
                 <div class="accordion" role="tablist" id="accordion-1">
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Circuito</button></h2>
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M240.5 224H352C365.3 224 377.3 232.3 381.1 244.7C386.6 257.2 383.1 271.3 373.1 280.1L117.1 504.1C105.8 513.9 89.27 514.7 77.19 505.9C65.1 497.1 60.7 481.1 66.59 467.4L143.5 288H31.1C18.67 288 6.733 279.7 2.044 267.3C-2.645 254.8 .8944 240.7 10.93 231.9L266.9 7.918C278.2-1.92 294.7-2.669 306.8 6.114C318.9 14.9 323.3 30.87 317.4 44.61L240.5 224z"></path>
+                                </svg>&nbsp;Circuito</button></h2>
                         <div class="accordion-collapse collapse item-1" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-3"><span style="background-color: rgb(248, 249, 250);">Nosso projeto utiliza um microcontrolador ESP32 (compatível com Arduino), um módulo relê, um sensor de umidade do solo, uma bomba de água e um sensor de nível, além de uma fonte para alimentá-lo.</span><br><br><span style="background-color: rgb(248, 249, 250);">O</span>&nbsp;sensor de umidade é colocado na planta que será monitorada. A bomba é ligada em um relê controlado pelo arduino junto de um sensor de nível de água para impedir a ligação da bomba com o reservatório vazio. Ao ser ligada, a bomba envia água até o vaso da planta.<br><br>Confira o circuito simplificado abaixo:</p>
@@ -88,7 +92,10 @@
                         </div>
                     </div>
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="350" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Fluxograma</button></h2>
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM152 96H64V160H152V96zM208 160H296V96H208V160zM448 96H360V160H448V96zM64 288H152V224H64V288zM296 224H208V288H296V224zM360 288H448V224H360V288zM152 352H64V416H152V352zM208 416H296V352H208V416zM448 352H360V416H448V352z"></path>
+                                </svg>&nbsp;Fluxograma</button></h2>
                         <div class="accordion-collapse collapse item-2" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">O fluxograma de nosso projeto começa medindo a umidade do solo e verificando se ela está abaixo do ideal. Caso não, ela aguarda 30 minutos para medir novamente. Caso sim, é medido o nível do reservatório e caso esteja baixo, é interrompido e um alerta é emitido ao usuário. Caso esteja bom, a bomba de água é acionada em ciclos de 5 segundos até que o sensor de umidade detecte que o nível está ideal.</span><br><br></p>
@@ -97,7 +104,10 @@
                         </div>
                     </div>
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">App</button></h2>
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M320 0H64C37.5 0 16 21.5 16 48v416C16 490.5 37.5 512 64 512h256c26.5 0 48-21.5 48-48v-416C368 21.5 346.5 0 320 0zM240 447.1C240 456.8 232.8 464 224 464H159.1C151.2 464 144 456.8 144 448S151.2 432 160 432h64C232.8 432 240 439.2 240 447.1zM304 384h-224V64h224V384z"></path>
+                                </svg>&nbsp;App</button></h2>
                         <div class="accordion-collapse collapse item-3" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-0"><span style="background-color: rgb(248, 249, 250);">Nosso projeto terá um app onde será possível monitorar a umidade da planta, o nível do reservatório e forçar a irrigação da planta quando quiser.</span></p><img class="img-fluid" src="assets/img/app.png" width="465" height="467">
