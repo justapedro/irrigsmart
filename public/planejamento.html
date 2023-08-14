@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html data-bs-theme="light" lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -7,8 +7,9 @@
     <title>Planejamento - IrrigSmart</title>
     <link rel="canonical" href="https://irrigsmart.com.br/planejamento.html">
     <meta property="og:url" content="https://irrigsmart.com.br/planejamento.html">
-    <meta property="og:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
-    <meta name="twitter:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
+    <meta property="og:image" content="https://irrigsmart.com.br/assets/img/background.webp">
+    <meta name="twitter:image" content="https://irrigsmart.com.br/assets/img/background.webp">
+    <meta name="description" content="Confira as ferramentas que utilizamos para fazer o planejamento do projeto.">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
@@ -18,9 +19,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Large-Icons-icons.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
+<script type="module">
+      //FIREBASE
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
+        authDomain: "irrigsmart-fe662.firebaseapp.com",
+        projectId: "irrigsmart-fe662",
+        storageBucket: "irrigsmart-fe662.appspot.com",
+        messagingSenderId: "530590934500",
+        appId: "1:530590934500:web:1b26758c30bfc8264413f1",
+        measurementId: "G-VR1SHW0J4J"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
@@ -30,7 +46,7 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.webp&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
                     <div></div>
                 </div>
                 <div class="modal fade ms-0 mt-0 me-0 pe-0" role="dialog" tabindex="-1" id="modal-ishikawa-1">
@@ -39,7 +55,7 @@
                             <div class="modal-header">
                                 <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                             </div>
-                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.webp&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
                                 <div></div>
                             </div>
                         </div>
@@ -63,7 +79,7 @@
                             <div class="modal-header">
                                 <h4 class="modal-title">Diagrama de Ishikawa</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                             </div>
-                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                            <div class="modal-body" style="background: url(&quot;assets/img/ishikawa.webp&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
                                 <div></div>
                             </div>
                         </div>
@@ -72,15 +88,16 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" data-aos="slide-down" data-aos-offset="500px" data-aos-once="true" style="background: rgba(233,255,233,0.79);backdrop-filter: opacity(1) blur(8px);-webkit-backdrop-filter: opacity(1) blur(8px);">
+    <nav class="navbar navbar-expand-lg fixed-top clean-navbar navbar-light" data-aos="slide-down" data-aos-offset="500px" data-aos-once="true" style="background: rgba(233,255,233,0.79);backdrop-filter: opacity(1) blur(8px);">
         <div class="container"><a class="navbar-brand fw-semibold link-success logo" data-aos="flip-down" data-aos-delay="300" href="index.html"><img src="assets/img/logo.svg" width="66" height="43">IrrigSmart</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#hero">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="planejamento.html">planejamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tecnica.html">técnica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ppt.html">Apresentações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#equipe">equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">final</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inicio.html#hero">INÍCIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inicio.html#equipe">equipe</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">projeto</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="planejamento.html">Planejamento</a><a class="dropdown-item" href="tecnica.html">Técnica</a><a class="dropdown-item" href="ppt.html">Apresentações</a></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -88,7 +105,7 @@
     <main class="page">
         <section class="py-4 py-xl-5">
             <div class="container">
-                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center p-4 py-5" data-aos="zoom-out" data-aos-once="true" style="background: linear-gradient(rgba(19,136,0,0.8), rgba(24,120,0,0.88)), url(&quot;assets/img/img-1.jpg&quot;) top / auto;height: 500px;">
+                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center p-4 py-5" data-aos="zoom-out" data-aos-once="true" style="background: linear-gradient(rgba(19,136,0,0.8), rgba(24,120,0,0.88)), url(&quot;assets/img/background.webp&quot;) top / auto;height: 500px;">
                     <div class="row">
                         <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
                             <div>
@@ -111,7 +128,7 @@
                         <div class="accordion-collapse collapse item-1" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-3"><span style="background-color: rgb(248, 249, 250);">Nosso principal problema é o de plantas e flores morrendo, a partir disso traçamos as principais causas utilizando o diagrama de Ishikawa (6M).</span></p>
-                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" width="905" height="537" src="assets/img/ishikawa.png" data-bs-toggle="modal" data-bs-target="#modal-ishikawa" style="width: 80%;"></div>
+                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" width="905" height="537" src="assets/img/ishikawa.webp" data-bs-toggle="modal" data-bs-target="#modal-ishikawa" style="width: 80%;"></div>
                             </div>
                         </div>
                     </div>
@@ -137,7 +154,7 @@
                                 <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">O Trello é uma plataforma de gerenciamento de projetos por meio de cartões. Nós utilizamos ele para melhorar o gerenciamento de nosso projeto.</span><a class="btn btn-success" role="button" style="margin-left: 8px;" href="https://trello.com/b/8eY9m2a3/irrigsmart" rel="external"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
                                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                             <path d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"></path>
-                                        </svg>&nbsp;Acessar Trello</a><br><a href="https://trello.com/b/8eY9m2a3/irrigsmart" rel="external"><img class="img-fluid bg-info bg-gradient border rounded" width="436" height="260" src="assets/img/screely-1683329851228.png" style="padding-top: 10px;margin-top: 16px;"></a></p>
+                                        </svg>&nbsp;Acessar Trello</a><br><a href="https://trello.com/b/8eY9m2a3/irrigsmart" rel="external"><img class="img-fluid bg-info bg-gradient border rounded" width="436" height="260" src="assets/img/mockup_trello.webp" style="padding-top: 10px;margin-top: 16px;"></a></p>
                             </div>
                         </div>
                     </div>
@@ -149,7 +166,7 @@
                         <div class="accordion-collapse collapse item-4" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">Utilizamos a inteligência artificial do ChatGPT para dar uma opinião técnica sobre o projeto. Confira as mensagens:</span><br><br></p>
-                                <div class="col-md-8 mx-auto bg-dark shadow-sm px-3 py-3 me-0 ms-0" id="chat-container-1" style="width: 80%;height: auto;border-radius: 21px;">
+                                <div class="col-md-8 mx-auto bg-dark shadow-sm px-3 py-3 me-0 ms-0" id="chat-container-1" style="width:80%;height:auto;border-radius:21px;">
                                     <div class="chat-bubble from-user">
                                         <div class="user-img"><img src="assets/img/user.png" alt="Ícone do usuário"></div>
                                         <div class="user-message"><span>Olá ChatGPT! Estamos criando um projeto para minha faculdade onde faremos um sistema de irrigação automatizado utilizando arduino para resolver o problema de plantas morrendo. O nome do nosso projeto é IrrigSmart.</span></div>
@@ -193,22 +210,7 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script type="module">
-        //FIREBASE
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
-        const firebaseConfig = {
-          apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
-          authDomain: "irrigsmart-fe662.firebaseapp.com",
-          projectId: "irrigsmart-fe662",
-          storageBucket: "irrigsmart-fe662.appspot.com",
-          messagingSenderId: "530590934500",
-          appId: "1:530590934500:web:1b26758c30bfc8264413f1",
-          measurementId: "G-VR1SHW0J4J"
-        };
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
 </body>
 
 </html>

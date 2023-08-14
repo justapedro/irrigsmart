@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html data-bs-theme="light" lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contato - IrrigSmart</title>
+    <title>Contact Us - Brand</title>
     <link rel="canonical" href="https://irrigsmart.com.br/contato.html">
     <meta property="og:url" content="https://irrigsmart.com.br/contato.html">
     <meta property="og:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
@@ -21,6 +21,22 @@
     <link rel="stylesheet" href="assets/css/Features-Large-Icons-icons.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+<script type="module">
+      //FIREBASE
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
+        authDomain: "irrigsmart-fe662.firebaseapp.com",
+        projectId: "irrigsmart-fe662",
+        storageBucket: "irrigsmart-fe662.appspot.com",
+        messagingSenderId: "530590934500",
+        appId: "1:530590934500:web:1b26758c30bfc8264413f1",
+        measurementId: "G-VR1SHW0J4J"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
@@ -29,10 +45,10 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#hero">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="planejamento.html">planejamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tecnica.html">técnica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ppt.html">Apresentações</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#equipe">equipe</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">projeto</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="planejamento.html">Planejamento</a><a class="dropdown-item" href="tecnica.html">Técnica</a><a class="dropdown-item" href="ppt.html">Apresentações</a></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -101,22 +117,6 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script type="module">
-        //FIREBASE
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
-        const firebaseConfig = {
-          apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
-          authDomain: "irrigsmart-fe662.firebaseapp.com",
-          projectId: "irrigsmart-fe662",
-          storageBucket: "irrigsmart-fe662.appspot.com",
-          messagingSenderId: "530590934500",
-          appId: "1:530590934500:web:1b26758c30bfc8264413f1",
-          measurementId: "G-VR1SHW0J4J"
-        };
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
 </body>
 
 </html>

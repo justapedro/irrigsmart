@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html data-bs-theme="light" lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -7,8 +7,9 @@
     <title>Técnica - IrrigSmart</title>
     <link rel="canonical" href="https://irrigsmart.com.br/tecnica.html">
     <meta property="og:url" content="https://irrigsmart.com.br/tecnica.html">
-    <meta property="og:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
-    <meta name="twitter:image" content="https://irrigsmart.com.br/assets/img/img-1.jpg">
+    <meta property="og:image" content="https://irrigsmart.com.br/assets/img/background.webp">
+    <meta name="twitter:image" content="https://irrigsmart.com.br/assets/img/background.webp">
+    <meta name="description" content="Confira como foi feita a parte técnica do nosso projeto.">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
     <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logo.svg">
@@ -18,9 +19,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Large-Icons-icons.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
+<script type="module">
+      //FIREBASE
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
+        authDomain: "irrigsmart-fe662.firebaseapp.com",
+        projectId: "irrigsmart-fe662",
+        storageBucket: "irrigsmart-fe662.appspot.com",
+        messagingSenderId: "530590934500",
+        appId: "1:530590934500:web:1b26758c30bfc8264413f1",
+        measurementId: "G-VR1SHW0J4J"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
@@ -30,7 +46,7 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Circuito</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background: url(&quot;assets/img/Circuito2.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                <div class="modal-body" style="background: url(Circuito Final.webp) center / contain no-repeat, #ffffff;position: relative;display: block;">
                     <div></div>
                 </div>
             </div>
@@ -42,21 +58,22 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Fluxograma</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background: url(&quot;assets/img/Fluxograma.png&quot;) center / contain no-repeat, #ffffff;position: relative;display: block;">
+                <div class="modal-body" style="background: url(Fluxograma IrrigSmart.webp) center / contain no-repeat, #ffffff;position: relative;display: block;">
                     <div></div>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" data-aos="slide-down" data-aos-offset="500px" data-aos-once="true" style="background: rgba(233,255,233,0.79);backdrop-filter: opacity(1) blur(8px);-webkit-backdrop-filter: opacity(1) blur(8px);">
+    <nav class="navbar navbar-expand-lg fixed-top clean-navbar navbar-light" data-aos="slide-down" data-aos-offset="500px" data-aos-once="true" style="background: rgba(233,255,233,0.79);backdrop-filter: opacity(1) blur(8px);">
         <div class="container"><a class="navbar-brand fw-semibold link-success logo" data-aos="flip-down" data-aos-delay="300" href="index.html"><img src="assets/img/logo.svg" width="66" height="43">IrrigSmart</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#hero">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="planejamento.html">planejamento</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="tecnica.html">técnica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ppt.html">Apresentações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#equipe">equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">final</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inicio.html#hero">INÍCIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inicio.html#equipe">equipe</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">projeto</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="planejamento.html">Planejamento</a><a class="dropdown-item" href="tecnica.html">Técnica</a><a class="dropdown-item" href="ppt.html">Apresentações</a></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -64,7 +81,7 @@
     <main class="page">
         <section class="py-4 py-xl-5">
             <div class="container">
-                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center p-4 py-5" data-aos="zoom-out" data-aos-once="true" style="background: linear-gradient(rgba(19,136,0,0.8), rgba(24,120,0,0.88)), url(&quot;assets/img/img-1.jpg&quot;) top / auto;height: 500px;">
+                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center p-4 py-5" data-aos="zoom-out" data-aos-once="true" style="background: linear-gradient(rgba(19,136,0,0.8), rgba(24,120,0,0.88)), url(&quot;assets/img/background.webp&quot;) top / auto;height: 500px;">
                     <div class="row">
                         <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
                             <div>
@@ -87,7 +104,7 @@
                         <div class="accordion-collapse collapse item-1" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-3"><span style="background-color: rgb(248, 249, 250);">Nosso projeto utiliza um microcontrolador ESP32 (compatível com Arduino), um módulo relê, um sensor de umidade do solo, uma bomba de água e um sensor de nível, além de uma fonte para alimentá-lo.</span><br><br><span style="background-color: rgb(248, 249, 250);">O</span>&nbsp;sensor de umidade é colocado na planta que será monitorada. A bomba é ligada em um relê controlado pelo arduino junto de um sensor de nível de água para impedir a ligação da bomba com o reservatório vazio. Ao ser ligada, a bomba envia água até o vaso da planta.<br><br>Confira o circuito simplificado abaixo:</p>
-                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" width="905" height="537" src="assets/img/Circuito2.png" data-bs-toggle="modal" data-bs-target="#modal-ishikawa" style="width: 80%;"></div>
+                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" width="905" height="537" src="assets/img/Circuito%20Final.webp" data-bs-toggle="modal" data-bs-target="#modal-ishikawa" style="width: 80%;"></div>
                             </div>
                         </div>
                     </div>
@@ -99,18 +116,27 @@
                         <div class="accordion-collapse collapse item-2" role="tabpanel">
                             <div class="accordion-body">
                                 <p class="mb-0"><br><span style="background-color: rgb(248, 249, 250);">O fluxograma de nosso projeto começa medindo a umidade do solo e verificando se ela está abaixo do ideal. Caso não, ela aguarda 30 minutos para medir novamente. Caso sim, é medido o nível do reservatório e caso esteja baixo, é interrompido e um alerta é emitido ao usuário. Caso esteja bom, a bomba de água é acionada em ciclos de 5 segundos até que o sensor de umidade detecte que o nível está ideal.</span><br><br></p>
-                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" src="assets/img/Fluxograma.png" data-bs-toggle="modal" data-bs-target="#modal-canvas" style="width: 80%;"></div>
+                                <div><img class="img-fluid bg-light border rounded border-1 shadow-sm" src="assets/img/Fluxograma%20IrrigSmart.webp" data-bs-toggle="modal" data-bs-target="#modal-canvas" style="width: 80%;"></div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
-                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button fs-2 text-success" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="true" aria-controls="accordion-1 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M320 0H64C37.5 0 16 21.5 16 48v416C16 490.5 37.5 512 64 512h256c26.5 0 48-21.5 48-48v-416C368 21.5 346.5 0 320 0zM240 447.1C240 456.8 232.8 464 224 464H159.1C151.2 464 144 456.8 144 448S151.2 432 160 432h64C232.8 432 240 439.2 240 447.1zM304 384h-224V64h224V384z"></path>
                                 </svg>&nbsp;App</button></h2>
-                        <div class="accordion-collapse collapse item-3" role="tabpanel">
+                        <div class="accordion-collapse collapse show item-3" role="tabpanel">
                             <div class="accordion-body">
-                                <p class="mb-0"><span style="background-color: rgb(248, 249, 250);">Nosso projeto terá um app onde será possível monitorar a umidade da planta, o nível do reservatório e forçar a irrigação da planta quando quiser.</span></p><img class="img-fluid" src="assets/img/app.png" width="465" height="467">
+                                <section class="photo-gallery">
+                                    <div class="container-fluid">
+                                        <p class="mb-0" style="padding-bottom: 20px;"><span style="background-color: rgb(248, 249, 250);">Com o app IrrigSmart, você consegue adicionar suas plantas que utilizam o irrigador para monitorar o nível de umidade do solo, nível do reservatório e data da última irrigação. Para entrar no aplicativo, basta criar uma conta, clicar no botão de adição e digitar os dados da planta, adicionar fotos e fazer a conexão com o irrigador.</span></p>
+                                        <div class="row gx-2 gy-2 row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 photos" data-bss-baguettebox="">
+                                            <div class="col item"><a href="assets/img/app_2.png"><img class="rounded img-fluid" src="assets/img/app_2.png"></a></div>
+                                            <div class="col item"><a href="assets/img/app_1.png"><img class="rounded img-fluid" src="assets/img/app_1.png"></a></div>
+                                            <div class="col item"><a href="assets/img/app_3.png"><img class="rounded img-fluid focus-ring" src="assets/img/app_3.png"></a></div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -125,7 +151,7 @@
                 <li class="list-inline-item me-4"><a class="fs-4 fw-semibold link-light text-decoration-none" href="#"><img width="60" height="43" src="assets/img/logo-white.svg">IrrigSmart</a></li>
                 <li class="list-inline-item"></li>
             </ul><a class="link-info text-decoration-none mb-xxl-0" href="mailto:sac@irrigsmart.com.br" target="_blank">Contato: sac@irrigsmart.com.br</a>
-            <p style="margin-top: 13px;">IrrigSmart é um projeto universitário de engenharia, sem fins lucrativos.</p><a class="link-success mb-0" href="https://github.com/justapedro"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-code-slash me-2 pb-0 mb-1" style="font-size: 16px;">
+            <p style="margin-top: 13px;">Projeto para a disciplina 'Prática Profissional Extensionista: Introdução aos Projetos de Engenharia'<br>1º Semestre de Engenharia de Computação na Universidade São Francisco<br>Professora Orientadora: Debora Meyhofer Ferreira</p><a class="link-success mb-0" href="https://github.com/justapedro"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-code-slash me-2 pb-0 mb-1" style="font-size: 16px;">
                     <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
                 </svg>Feito por justapedro</a>
             <p class="text-muted mb-0 mt-2">Copyright © 2023 IrrigSmart</p>
@@ -137,22 +163,7 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script type="module">
-        //FIREBASE
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
-        const firebaseConfig = {
-          apiKey: "AIzaSyAXd1rSRJcmIZwvjhRvQV9ip71q2VjZzgc",
-          authDomain: "irrigsmart-fe662.firebaseapp.com",
-          projectId: "irrigsmart-fe662",
-          storageBucket: "irrigsmart-fe662.appspot.com",
-          messagingSenderId: "530590934500",
-          appId: "1:530590934500:web:1b26758c30bfc8264413f1",
-          measurementId: "G-VR1SHW0J4J"
-        };
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
 </body>
 
 </html>
